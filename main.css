@@ -100,7 +100,7 @@ a {
 .project_content {
     padding-top: 3%;
     padding-bottom : 3%;
-    width : 40%;
+    width : 45%;
 }
 
 .project_content h3, .project_content p {
@@ -108,34 +108,41 @@ a {
 }
 
 .btn_go {
-    display: inline-block;
-    width: 100%;
-    background-color: #6e8efb;
+    display: block;
+    width: 80%;
+    background-color: #6e9bfb;
     border-radius: 15px;
     text-align: center;
     line-height: 1.8em;
     padding: 0.3em 1.5em;
-    margin-top: 3%;
-    color: aliceblue;
-    border: none;
+    margin: 3% auto;
+    color: rgb(12, 29, 44);
     cursor: pointer;
-    box-shadow: 3px 3px 2px rgba(109, 126, 134, 0.432);
+
+    transition: all 0.9s;
 }
 
 .btn_go:hover {
-    background-color: #132c7c;
-    _color: #222222;
-    _border: 2px solid #6e8efb;
+    color: azure;
+    box-shadow: 450px 0 0 0 #2851a883 inset;
 }
 
 #footer{
     background :rgb(207, 207, 207);
     height:150px;
+    text-align: center;
 }
 
-#footer p {
-    text-align: center; 
-    margin-top : 50px;   
+.contactList {
+    margin-top: 2%;
+}
+
+.contactList li {
+    padding-top: 0.3%;
+    font-size: 1.2em;
+}
+.contactList>li>a>i {
+    margin-right: 0.5%;
 }
 
 .fLink {
