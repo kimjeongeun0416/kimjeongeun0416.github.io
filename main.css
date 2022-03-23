@@ -1,0 +1,172 @@
+*{
+    margin :0;
+    padding:0;
+    list-style: none;
+    font-family: 'Independence_hall' ;
+}
+
+a {
+    color : inherit;
+    text-decoration: none;
+}
+/* a:link, a:visited {
+    color : #222222;
+    text-decoration: none;
+} */
+
+/*폰트*/
+@font-face {
+    font-family: 'Independence_hall';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Independence_hall.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* pc버전 */
+
+#wrap{
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info_area {
+    background-color: rgb(234, 248, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.info_area h1, .info_area h3, .info_area p, .project_area h1 {
+    text-align: center;
+    padding : 1%;
+}
+
+.info_area h1 {    
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.skill_image {
+    _background: aquamarine;
+    width : 80%;
+    margin: 1% auto;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.skill_image img {
+    max-width: 55px;
+    margin-left : 2%;
+    
+}
+.project_area {
+    background-color: azure;
+    width: 100%;
+}
+
+.project_area>h2 {
+    text-align: center;
+    padding : 1%;
+    margin-top: 3%;
+}
+
+.project_area li {
+    background: whitesmoke;
+    width: 80%;
+    margin : 3% auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px rgba(109, 126, 134, 0.432);
+}
+
+.project_area li>h3 {
+    text-align: center;
+    margin-left : 10%;
+}
+.project_area .img {
+    padding : 3%;
+}
+.project_area .img img {
+    max-width: 350px;
+}
+
+.project_content {
+    padding-top: 3%;
+    padding-bottom : 3%;
+    width : 40%;
+}
+
+.project_content h3, .project_content p {
+    padding-top: 2%;
+}
+
+.btn_go {
+    display: inline-block;
+    width: 100%;
+    background-color: #6e8efb;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.8em;
+    padding: 0.3em 1.5em;
+    margin-top: 3%;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 2px rgba(109, 126, 134, 0.432);
+}
+
+.btn_go:hover {
+    background-color: #132c7c;
+    _color: #222222;
+    _border: 2px solid #6e8efb;
+}
+
+#footer{
+    background :rgb(207, 207, 207);
+    height:150px;
+}
+
+#footer p {
+    text-align: center; 
+    margin-top : 50px;   
+}
+
+.fLink {
+    margin: 0 auto;
+}
+
+@media ( max-width: 1023px ) { /* 태블릿 버전 */
+  }
+
+@media ( max-width: 768px ) { /* 모바일 버전 */
+    .skill_image {
+        margin: 3% auto;
+    }
+    .project_area>h2 {
+        margin: 2% auto;
+    }
+    .project_area li {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .project_area .img {
+        margin-top: 5%;
+    }
+    .project_content {
+        width: 75%;
+        margin-bottom: 3%;
+    }
+    .btn_go {
+        height: 50px;
+        line-height: 2.2em;
+    }
+  }
+
