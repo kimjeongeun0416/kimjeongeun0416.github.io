@@ -93,8 +93,16 @@ a {
 .project_area .img {
     padding : 3%;
 }
+
+.project_area .img::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
 .project_area .img img {
     max-width: 350px;
+    vertical-align: middle;
 }
 
 .project_content {
@@ -124,7 +132,7 @@ a {
 
 .btn_go:hover {
     color: azure;
-    box-shadow: 450px 0 0 0 #2851a883 inset;
+    box-shadow: 650px 0 0 0 #2851a883 inset;
 }
 
 #footer{
