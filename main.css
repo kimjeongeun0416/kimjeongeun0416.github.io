@@ -175,13 +175,19 @@ a {
     .project_area .img {
         margin-top: 5%;
     }
+    .project_area .img img {
+        max-width: 300px;
+    }
     .project_content {
         width: 75%;
         margin-bottom: 3%;
     }
     .btn_go {
         height: 50px;
-        line-height: 2.2em;
+        line-height: 2.4em;
+    }
+    .contactList {
+        margin-top: 10%;
     }
   }
 
