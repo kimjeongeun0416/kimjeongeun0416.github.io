@@ -32,11 +32,13 @@ a {
 }
 
 .info_area {
-    background-color: rgb(234, 248, 255);
+    background-color: rgb(246, 252, 252);
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    border-bottom: 1px solid #eee;
+    box-shadow: 1px 2px 1px rgba(242, 245, 247, 0.432);
 }
 
 .info_area h1, .info_area h3, .info_area p, .project_area h1 {
@@ -50,7 +52,6 @@ a {
 }
 
 .skill_image {
-    _background: aquamarine;
     width : 80%;
     margin: 1% auto;
     padding: 1%;
@@ -66,7 +67,7 @@ a {
     
 }
 .project_area {
-    background-color: azure;
+    background-color: rgb(254, 255, 255);
     width: 100%;
 }
 
@@ -83,7 +84,7 @@ a {
     display: flex;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 4px 4px 4px rgba(109, 126, 134, 0.432);
+    box-shadow: 4px 4px 4px rgba(181, 182, 182, 0.432);
 }
 
 .project_area li>h3 {
@@ -118,7 +119,7 @@ a {
 .btn_go {
     display: block;
     width: 80%;
-    background-color: #6e9bfb;
+    background-color: #9bbbff;
     border-radius: 15px;
     text-align: center;
     line-height: 1.8em;
@@ -161,8 +162,14 @@ a {
   }
 
 @media ( max-width: 768px ) { /* 모바일 버전 */
+    .info_area h1 {
+        padding-top: 6%;
+    }
     .skill_image {
         margin: 3% auto;
+    }
+    .skill_image img {
+        max-width: 35px;
     }
     .project_area>h2 {
         margin: 2% auto;
